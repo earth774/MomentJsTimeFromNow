@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+ 
+<div id="show_thaidate" style="margin:auto;width:500px;"></div>    
+  
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>         
+<script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>      <script type="text/javascript">
+$(function(){
+    moment.locale('th');
+    $("#show_thaidate").html(moment("2020-04-14 13:54:31").startOf('hour').fromNow());
+});
+</script>  
+</body>
+</html>
